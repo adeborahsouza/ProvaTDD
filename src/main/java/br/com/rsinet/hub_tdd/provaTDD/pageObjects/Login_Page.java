@@ -1,9 +1,16 @@
 package br.com.rsinet.hub_tdd.provaTDD.pageObjects;
 
-public class Login_Page {
-	
-	// opção cadastro
-	driver.findElement(By.xpath("/html/body/login-modal/div/div/div[3]/a[2]")).click();
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
+public class Login_Page {
+	private static WebElement element = null;
+
+	public static WebElement btnUser(WebDriver driver) {
+		// clica no icone de login
+		driver.findElement(By.id("menuUserSVGPath"));
+		return element;
+	}
 
 }

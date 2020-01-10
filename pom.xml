@@ -5,7 +5,7 @@
 	<groupId>ProjetoTDD</groupId>
 	<artifactId>ProjetoTDD</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<name>ProvaTDD</name>
 	<url></url>
 	<properties>
@@ -13,8 +13,6 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-
-
 
 	<dependencies>
 		<dependency>
@@ -24,23 +22,17 @@
 			<scope>test</scope>
 		</dependency>
 
-
-
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
 		</dependency>
 
-
-
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>4.1.1</version>
 		</dependency>
-
-
 
 		<dependency>
 			<groupId>log4j</groupId>
@@ -49,11 +41,15 @@
 		</dependency>
 
 
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.6</version>
+		</dependency>
+
 
 
 	</dependencies>
-
-
 
 	<build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
