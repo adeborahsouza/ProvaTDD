@@ -7,89 +7,88 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Register_Page {
 	private static WebElement element = null;
-
-	public static WebElement btnUser(WebDriver driver) {
-		// escrevendo username
-		driver.findElement(By.name("usernameRegisterPage"));
+	
+	public static WebElement user(WebDriver driver) {
+		element = driver.findElement(By.name("usernameRegisterPage"));
 		return element;
 	}
 
 	public static WebElement email(WebDriver driver) {
 		// escrevendo email
-		driver.findElement(By.name("emailRegisterPage"));
+		element = driver.findElement(By.name("emailRegisterPage"));
 		return element;
 	}
 
-	public static WebElement senha(WebDriver driver) {
+	public static WebElement password(WebDriver driver) {
 		// escrevendo senha
-		driver.findElement(By.name("passwordRegisterPage"));
+		element = driver.findElement(By.name("passwordRegisterPage"));
 		return element;
 	}
 
-	public static WebElement confsenha(WebDriver driver) {
+	public static WebElement confpassword(WebDriver driver) {
 		// confirmando senha
-		driver.findElement(By.name("confirm_passwordRegisterPage"));
+		element = driver.findElement(By.name("confirm_passwordRegisterPage"));
 		return element;
 	}
 
-	public static WebElement nome(WebDriver driver) {
+	public static WebElement name(WebDriver driver) {
 		// escrevendo primeiro nome
-		driver.findElement(By.name("first_nameRegisterPage"));
+		element = driver.findElement(By.name("first_nameRegisterPage"));
 		return element;
 	}
 
-	public static WebElement ultimonome(WebDriver driver) {
+	public static WebElement lastname(WebDriver driver) {
 		// escrevendo ultimo nome
-		driver.findElement(By.name("last_nameRegisterPage"));
+		element = driver.findElement(By.name("last_nameRegisterPage"));
 		return element;
 	}
 
-	public static WebElement telefone(WebDriver driver) {
+	public static WebElement phone(WebDriver driver) {
 		// escrevendo telefone
-		driver.findElement(By.name("phone_numberRegisterPage"));
+		element = driver.findElement(By.name("phone_numberRegisterPage"));
 		return element;
 	}
 
-	public static WebElement pais(WebDriver driver) {
+	public static Select country(WebDriver driver) {
 		// selecionando o pais
-		Select oSelect = new Select(driver.findElement(By.name("countryListboxRegisterPage")));
-		oSelect.selectByVisibleText("Brazil");
-		return element;
+		element = driver.findElement(By.name("countryListboxRegisterPage"));
+		Select oSelect = new Select(element);
+		return oSelect;
 	}
 
-	public static WebElement cidade(WebDriver driver) {
+	public static WebElement city(WebDriver driver) {
 		// escrevendo cidade
-		driver.findElement(By.name("cityRegisterPage"));
+		element = driver.findElement(By.name("cityRegisterPage"));
 		return element;
 	}
 
-	public static WebElement endereco(WebDriver driver) {
+	public static WebElement address(WebDriver driver) {
 		// escrevendo endereço
-		driver.findElement(By.name("addressRegisterPage"));
+		element = driver.findElement(By.name("addressRegisterPage"));
 		return element;
 	}
 
-	public static WebElement estado(WebDriver driver) {
+	public static WebElement state(WebDriver driver) {
 		// escrevendo estado
-		driver.findElement(By.name("state_/_province_/_regionRegisterPage"));
+		element = driver.findElement(By.name("state_/_province_/_regionRegisterPage"));
 		return element;
 	}
 
-	public static WebElement cep(WebDriver driver) {
+	public static WebElement postalcode(WebDriver driver) {
 		// escrevendo cep
-		driver.findElement(By.name("postal_codeRegisterPage"));
+		element = driver.findElement(By.name("postal_codeRegisterPage"));
 		return element;
 	}
 
-	public static WebElement termos(WebDriver driver) {
+	public static WebElement agree(WebDriver driver) {
 		// aceitando os termos
-		driver.findElement(By.name("i_agree"));
+		element = driver.findElement(By.name("i_agree"));
 		return element;
 	}
 
-	public static WebElement confirma(WebElement driver) {
+	public static WebElement register(WebDriver driver) {
 		// aceitando os termos
-		driver.findElement(By.id("register_btnundefined"));
+		element = driver.findElement(By.id("register_btnundefined"));
 		return element;
 	}
 
