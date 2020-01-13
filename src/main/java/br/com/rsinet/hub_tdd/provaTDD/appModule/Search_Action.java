@@ -11,7 +11,9 @@ public class Search_Action {
 
 	
 	public static void pesquisar(WebDriver driver) {
-		WebDriverWait wait = new WebDriverWait(driver, 50);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		
+		driver.manage().window().maximize();
 		Home_Page.mobile_search(driver).click();
 		Home_Page.escrevepesquisa(driver).sendKeys("HP Pavilion 15t Touch Laptop");
 		Home_Page.escrevepesquisa(driver).sendKeys(Keys.ENTER);
@@ -20,7 +22,6 @@ public class Search_Action {
 //		
 		wait.until(ExpectedConditions.visibilityOf(Home_Page.produto(driver)));
 		
-//		driver.manage().window().maximize();
 		
 		Home_Page.produto(driver).click();
 		

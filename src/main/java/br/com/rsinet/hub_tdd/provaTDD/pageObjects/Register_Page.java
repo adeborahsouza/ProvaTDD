@@ -88,9 +88,17 @@ public class Register_Page {
 
 	public static WebElement register(WebDriver driver) {
 		// aceitando os termos
+		element = driver.findElement(By.xpath("/html/body/login-modal/div/div/div[3]/a[2]"));
+		return element;
+	}
+	
+	public static WebElement btnRegister(WebDriver driver) {
+		// aceitando os termos
 		element = driver.findElement(By.id("register_btnundefined"));
 		return element;
 	}
+	
+	
 
 //		driver.quit();
 

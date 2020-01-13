@@ -19,15 +19,20 @@ public class Home_Page {
 		element = driver.findElement(By.id("searchSection"));
 		return element;
 	}
-	public static WebElement escrevepesquisa (WebDriver driver) {
+
+	public static WebElement escrevepesquisa(WebDriver driver) {
 		element = driver.findElement(By.id("autoComplete"));
 		return element;
 	}
-	
-	public static WebElement produto (WebDriver driver) {
-		element = driver.findElement(By.linkText("HP Pavilion 15t Touch Laptop")); 
+
+	public static WebElement produto(WebDriver driver) {
+		element = driver.findElement(By.linkText("HP Pavilion 15t Touch Laptop"));
 		return element;
 	}
 
-	
+	public static WebElement pesquisahome(WebDriver driver) {
+		element = driver.findElement(By.id("headphonesImg"));
+		return element;
+	}
+
 }

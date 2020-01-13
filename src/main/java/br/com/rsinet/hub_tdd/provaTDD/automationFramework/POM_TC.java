@@ -20,7 +20,6 @@ public class POM_TC {
 	public static void openBrowser() {
 		driver = new ChromeDriver();
 		System.setProperty("webdriver.chrome.drive", "C:\\Users\\deborah.souza\\Downloads\\chromedriver_win32");
-		// maximizar a tela
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
@@ -29,15 +28,16 @@ public class POM_TC {
 		driver.get("http://advantageonlineshopping.com");
 
 		// chama os metodos criados nas paginas de ação
-//		Login_Action.logar(driver);
 		Register_Action.registrar(driver);
 	}
 
-//		@Test
-//		public void pesquisa() {
-//			driver.get("http://advantageonlineshopping.com");
-//		Search_Action.pesquisar(driver);
-//		}
+		@Test
+		public void pesquisa() {
+			driver.get("http://advantageonlineshopping.com");
+		Search_Action.pesquisar(driver);
+		}
+		
+	
 
 	@AfterClass
 	public static void encerra() {

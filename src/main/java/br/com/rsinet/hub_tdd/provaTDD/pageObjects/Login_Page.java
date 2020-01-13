@@ -10,7 +10,7 @@ public class Login_Page {
 
 	// encontra o elemento e cria o método btncadastro
 	public static WebElement nome (WebDriver driver) {
-		driver.findElement(By.xpath("/html/body/login-modal/div/div/div[3]/sec-form/sec-view[1]/div/input"));
+		driver.findElement(By.name("usernameRegisterPage"));
 		return element;
 	}
 	
@@ -26,10 +26,10 @@ public class Login_Page {
 
 	
 	// encontra o elemento e cria o método btncadastro
-	public static WebElement btnCadastro(WebDriver driver) {
-		// clica no icone de login
-		driver.findElement(By.linkText("CREATE NEW ACCOUNT")).sendKeys(Keys.ENTER);
-		return element;
-	}
+//	public static WebElement btnCadastro(WebDriver driver) {
+//		// clica no icone de login
+//		driver.findElement(By.linkText("CREATE NEW ACCOUNT")).sendKeys(Keys.ENTER);
+//		return element;
+//	}
 
 }
