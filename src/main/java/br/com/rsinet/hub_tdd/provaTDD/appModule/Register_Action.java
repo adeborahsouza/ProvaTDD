@@ -2,14 +2,25 @@ package br.com.rsinet.hub_tdd.provaTDD.appModule;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Home_Page;
+import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Login_Page;
 import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Register_Page;
 
 public class Register_Action {
-	public static void registrar(WebDriver driver) {
-		Register_Page.user(driver).sendKeys("adeborahsouza");
+	public static void registrar(WebDriver driver)  {
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		
+		wait.until(ExpectedConditions.elementToBeClickable(Home_Page.btnUser(driver)));
+		Home_Page.btnUser(driver).click();
+		Login_Page.btnCadastro(driver).click();
+
+		wait.until(ExpectedConditions.urlContains("register"));
+		Register_Page.user(driver).click();
+//		Register_Page.user(driver).sendKeys("12345a6");
 		Register_Page.email(driver).sendKeys("adeborahsouza@gmail.com");
 		Register_Page.password(driver).sendKeys("68335740Bf*");
 		Register_Page.confpassword(driver).sendKeys("68335740Bf*");
@@ -24,4 +35,5 @@ public class Register_Action {
 		Register_Page.agree(driver).click();
 		Register_Page.register(driver).click();
 	}
+	
 }

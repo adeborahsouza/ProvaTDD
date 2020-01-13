@@ -16,8 +16,18 @@ public class Home_Page {
 
 	public static WebElement mobile_search(WebDriver driver) {
 		// encontrando o elemento lupa e clicando
-		element = driver.findElement(By.name("mobile_search"));
+		element = driver.findElement(By.id("searchSection"));
+		return element;
+	}
+	public static WebElement escrevepesquisa (WebDriver driver) {
+		element = driver.findElement(By.id("autoComplete"));
+		return element;
+	}
+	
+	public static WebElement produto (WebDriver driver) {
+		element = driver.findElement(By.linkText("HP Pavilion 15t Touch Laptop")); 
 		return element;
 	}
 
+	
 }
