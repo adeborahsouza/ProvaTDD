@@ -33,15 +33,15 @@ public class Register_Test {
 
 	}
 
-	@Test(priority = 1)
-	public void registerNegativo() {
-		// chama os metodos criados nas paginas de ação
-		Register_Action.registrar(driver);
-	}
+//	@Test(priority = 1)
+//	public void registerNegativo() {
+//		// chama os metodos criados nas paginas de ação
+//		Register_Action.registrar(driver);
+//	}
 
-	@AfterMethod
-	public static void encerra() {
-		driver.quit();
-	}
+//	@AfterMethod
+//	public static void encerra() {
+//		driver.quit();
+//	}
 
 }
