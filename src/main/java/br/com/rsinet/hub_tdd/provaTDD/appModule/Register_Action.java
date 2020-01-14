@@ -16,13 +16,14 @@ public class Register_Action {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 
 		wait.until(ExpectedConditions.elementToBeClickable(Home_Page.btnUser(driver)));
+		
 		Home_Page.btnUser(driver).click();
 
 		wait.until(ExpectedConditions.elementToBeClickable(Register_Page.register(driver)));
 		JavascriptExecutor jsExec = (JavascriptExecutor) driver;
 		jsExec.executeScript("arguments[0].click();", Register_Page.register(driver));
 
-		Register_Page.user(driver).sendKeys("12345a6u");
+		Register_Page.user(driver).sendKeys("DDDDDFA");
 		Register_Page.email(driver).sendKeys("adeborahsouza@gmail.com");
 		Register_Page.password(driver).sendKeys("68335740Bf*");
 		Register_Page.confpassword(driver).sendKeys("68335740Bf*");

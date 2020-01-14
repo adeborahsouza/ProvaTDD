@@ -14,11 +14,8 @@ public class Login_Action {
 
 		Home_Page.btnUser(driver).click();
 
-		// chama os métodos que criei no login_page
-		Login_Page.nome(driver).sendKeys("adeborahsouza");
-		Login_Page.password(driver).sendKeys("68335740Bf*");
-		Login_Page.btnlogin(driver).click();
 
+	
 	}
 
 }
