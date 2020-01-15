@@ -1,5 +1,7 @@
 package br.com.rsinet.hub_tdd.provaTDD.automationFramework;
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -12,6 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import br.com.rsinet.hub_tdd.provaTDD.appModule.ClickSearch_Action;
+import br.com.rsinet.hub_tdd.provaTDD.util.Print_Func;
 
 public class SearchHome_Test {
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
@@ -41,9 +44,10 @@ public class SearchHome_Test {
 		ClickSearch_Action.pesquisarinicio(driver);
 
 //	 valor esperado / valor comparando
-//		Assert.assertEquals(true, Home_Page.btnsignout(driver).isEnabled());
+//		assertTrue(true);(true, Home_Page.btnsignout(driver).isEnabled());
 
 		Reporter.log("Pesquisa realizada com sucesso.");
+		Print_Func.captureScreenShot(driver);
 	}
 
 //	

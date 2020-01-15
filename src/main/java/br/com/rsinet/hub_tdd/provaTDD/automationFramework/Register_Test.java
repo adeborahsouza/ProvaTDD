@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import br.com.rsinet.hub_tdd.provaTDD.appModule.Register_Action;
+import br.com.rsinet.hub_tdd.provaTDD.util.Print_Func;
 
 public class Register_Test {
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
@@ -42,6 +43,8 @@ public class Register_Test {
 		Register_Action.registrar(driver);
 
 		Reporter.log("Pesquisa realizada com sucesso.");
+		
+		Print_Func.captureScreenShot(driver);
 
 	}
 

@@ -46,6 +46,7 @@ public class Search_Test {
 		Log.info("Inicializando o método de pesquisa.");
 		Search_Action.pesquisar(driver);
 		Reporter.log("Pesquisa realizada com sucesso.");
+		
 		Print_Func.captureScreenShot(driver);
 
 	}

@@ -8,16 +8,16 @@
       <![CDATA[Pesquisa realizada com sucesso.]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16557" started-at="2020-01-15T13:46:12 BRT" finished-at="2020-01-15T13:46:28 BRT">
+  <suite name="Default suite" duration-ms="15293" started-at="2020-01-15T13:54:26 BRT" finished-at="2020-01-15T13:54:42 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16557" started-at="2020-01-15T13:46:12 BRT" finished-at="2020-01-15T13:46:28 BRT">
-      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test@ea1a8d5]" name="openBrowser" is-config="true" duration-ms="11739" started-at="2020-01-15T13:46:12 BRT" finished-at="2020-01-15T13:46:24 BRT">
+    <test name="Default test" duration-ms="15293" started-at="2020-01-15T13:54:26 BRT" finished-at="2020-01-15T13:54:42 BRT">
+      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test@2bbf4b8b]" name="openBrowser" is-config="true" duration-ms="10891" started-at="2020-01-15T13:54:26 BRT" finished-at="2020-01-15T13:54:37 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="searchPositivo()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test@ea1a8d5]" name="searchPositivo" duration-ms="4147" started-at="2020-01-15T13:46:24 BRT" finished-at="2020-01-15T13:46:28 BRT">
+        <test-method status="PASS" signature="searchHomePositivo()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test@2bbf4b8b]" name="searchHomePositivo" duration-ms="3767" started-at="2020-01-15T13:54:37 BRT" finished-at="2020-01-15T13:54:41 BRT">
           <reporter-output>
             <line>
               <![CDATA[ChromeDriver inicializado com sucesso.]]>
@@ -26,12 +26,12 @@
               <![CDATA[Pesquisa realizada com sucesso.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- searchPositivo -->
-        <test-method status="PASS" signature="encerra()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test@ea1a8d5]" name="encerra" is-config="true" duration-ms="633" started-at="2020-01-15T13:46:28 BRT" finished-at="2020-01-15T13:46:28 BRT">
+        </test-method> <!-- searchHomePositivo -->
+        <test-method status="PASS" signature="encerra()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test@2bbf4b8b]" name="encerra" is-config="true" duration-ms="608" started-at="2020-01-15T13:54:41 BRT" finished-at="2020-01-15T13:54:42 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- encerra -->
-      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test -->
+      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

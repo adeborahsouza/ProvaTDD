@@ -13,7 +13,7 @@ public class Print_Func {
 
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(src, new File("C:\\Users\\deborah.souza\\eclipse-workspace\\ProvaTDD\\imagens"
+			FileUtils.copyFile(src, new File("C:\\Users\\deborah.souza\\eclipse-workspace\\ProvaTDD\\screenshots\\"
 					+ System.currentTimeMillis() + ".png"));
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
