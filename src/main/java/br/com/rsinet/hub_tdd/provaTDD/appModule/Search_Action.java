@@ -12,7 +12,7 @@ import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Home_Page;
 import br.com.rsinet.hub_tdd.provaTDD.util.ExcelUtils;
 
 public class Search_Action {
-	private static Logger Log = Logger.getLogger(Logger.class.getName());
+	private static Logger Log = Logger.getLogger("Classe de pesquisa");
 
 	public static void pesquisar(WebDriver driver) throws Exception {
 		Log.info("Adicionando uma espera implicita.");

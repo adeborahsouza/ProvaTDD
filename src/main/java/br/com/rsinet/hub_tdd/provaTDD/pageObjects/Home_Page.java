@@ -29,7 +29,7 @@ public class Home_Page {
 	}
 
 	public static WebElement produto(WebDriver driver) throws Exception {
-		element = driver.findElement(By.linkText(ExcelUtils.getCellData(2, 0)));
+		element = driver.findElement(By.linkText(ExcelUtils.getCellData(1, 0)));
 		return element;
 	}
 

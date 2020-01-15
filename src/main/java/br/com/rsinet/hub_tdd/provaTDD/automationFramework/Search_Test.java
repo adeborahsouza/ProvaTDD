@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.ScreenshotException;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -13,9 +14,10 @@ import org.testng.annotations.Test;
 import br.com.rsinet.hub_tdd.provaTDD.appModule.Search_Action;
 import br.com.rsinet.hub_tdd.provaTDD.util.Constant;
 import br.com.rsinet.hub_tdd.provaTDD.util.ExcelUtils;
+import br.com.rsinet.hub_tdd.provaTDD.util.Print_Func;
 
 public class Search_Test {
-	private static Logger Log = Logger.getLogger(Logger.class.getName());
+	private static Logger Log = Logger.getLogger("Teste de pesquisa");
 	private static ChromeDriver driver;
 
 	@BeforeMethod
@@ -44,7 +46,8 @@ public class Search_Test {
 		Log.info("Inicializando o método de pesquisa.");
 		Search_Action.pesquisar(driver);
 		Reporter.log("Pesquisa realizada com sucesso.");
-//		 valor esperado / valor comparando
+		Print_Func.captureScreenShot(driver);
+
 	}
 
 	@AfterMethod
