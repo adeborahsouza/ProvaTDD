@@ -29,13 +29,13 @@ public class Home_Page {
 	}
 
 	public static WebElement produto(WebDriver driver) throws Exception {
-		element = driver.findElement(By.linkText(ExcelUtils.getCellData(1, 0)));
+		element = driver.findElement(By.linkText(ExcelUtils.getCellData(2, 0)));
 		return element;
 	}
 
 	public static WebElement pesquisahome(WebDriver driver) {
 		element = driver.findElement(By.id("tabletsImg"));
-		
+
 		return element;
 	}
 

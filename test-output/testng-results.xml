@@ -1,21 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
+    <line>
+      <![CDATA[ChromeDriver inicializado com sucesso.]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10318" started-at="2020-01-14T15:15:28 BRT" finished-at="2020-01-14T15:15:38 BRT">
+  <suite name="Default suite" duration-ms="20160" started-at="2020-01-15T11:37:40 BRT" finished-at="2020-01-15T11:38:01 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10318" started-at="2020-01-14T15:15:28 BRT" finished-at="2020-01-14T15:15:38 BRT">
-      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test@48503868]" name="openBrowser" is-config="true" duration-ms="6794" started-at="2020-01-14T15:15:28 BRT" finished-at="2020-01-14T15:15:35 BRT">
+    <test name="Default test" duration-ms="20160" started-at="2020-01-15T11:37:40 BRT" finished-at="2020-01-15T11:38:01 BRT">
+      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test@ea1a8d5]" name="openBrowser" is-config="true" duration-ms="11355" started-at="2020-01-15T11:37:40 BRT" finished-at="2020-01-15T11:37:52 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="searchHomePositivo()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test@48503868]" name="searchHomePositivo" duration-ms="3501" started-at="2020-01-14T15:15:35 BRT" finished-at="2020-01-14T15:15:38 BRT">
+        <test-method status="FAIL" signature="searchPositivo()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test@ea1a8d5]" name="searchPositivo" duration-ms="8165" started-at="2020-01-15T11:37:52 BRT" finished-at="2020-01-15T11:38:00 BRT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using link text=HP Pavilion 15t Touch Laptop
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RSI1583', ip: '10.1.0.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using link text=HP Pavilion 15t Touch Laptop
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RSI1583', ip: '10.1.0.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at br.com.rsinet.hub_tdd.provaTDD.pageObjects.Home_Page.produto(Home_Page.java:32)
+at br.com.rsinet.hub_tdd.provaTDD.appModule.Search_Action.pesquisar(Search_Action.java:37)
+at br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test.searchPositivo(Search_Test.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[ChromeDriver inicializado com sucesso.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchPositivo -->
+        <test-method status="PASS" signature="encerra()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test@ea1a8d5]" name="encerra" is-config="true" duration-ms="610" started-at="2020-01-15T11:38:00 BRT" finished-at="2020-01-15T11:38:01 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchHomePositivo -->
-      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test -->
+        </test-method> <!-- encerra -->
+      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

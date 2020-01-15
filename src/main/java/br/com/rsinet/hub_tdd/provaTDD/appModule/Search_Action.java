@@ -1,28 +1,42 @@
 package br.com.rsinet.hub_tdd.provaTDD.appModule;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Home_Page;
 import br.com.rsinet.hub_tdd.provaTDD.util.ExcelUtils;
 
 public class Search_Action {
+	private static Logger Log = Logger.getLogger(Logger.class.getName());
 
 	public static void pesquisar(WebDriver driver) throws Exception {
+		Log.info("Adicionando uma espera implicita.");
 		WebDriverWait wait = new WebDriverWait(driver, 30);
-		
+
+		Log.info("Espera o elemento ser visível na página.");
 		wait.until(ExpectedConditions.visibilityOf(Home_Page.mobile_search(driver)));
+
+		Log.info("Clica no icone de pesquisa.");
 		Home_Page.mobile_search(driver).click();
+
+		Log.info("Preenche a pesquisa com massa de dados do excel.");
 		Home_Page.escrevepesquisa(driver).sendKeys(ExcelUtils.getCellData(1, 0));
+
+		Log.info("Pressiona Enter.");
 		Home_Page.escrevepesquisa(driver).sendKeys(Keys.ENTER);
-////		
+
+		Log.info("Espera até que na url contenha a palavra search.");
 		wait.until(ExpectedConditions.urlContains("search"));
-////		
+
+		Log.info("Espera o elemento se tornar visível na página.");
 		wait.until(ExpectedConditions.visibilityOf(Home_Page.produto(driver)));
-//
+
+		Log.info("Clica no elemento.");
 		JavascriptExecutor ex = (JavascriptExecutor) driver;
 		ex.executeScript("arguments[0].click();", Home_Page.produto(driver));
 
