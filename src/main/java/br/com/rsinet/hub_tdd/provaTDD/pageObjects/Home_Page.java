@@ -23,7 +23,7 @@ public class Home_Page {
 		return element;
 	}
 
-	public static WebElement escrevepesquisa(WebDriver driver) {
+	public static WebElement escrevePesquisa(WebDriver driver) {
 		element = driver.findElement(By.id("autoComplete"));
 		return element;
 	}
@@ -33,15 +33,40 @@ public class Home_Page {
 		return element;
 	}
 
-	public static WebElement pesquisahome(WebDriver driver) {
+	public static WebElement pesquisaHome(WebDriver driver) {
 		element = driver.findElement(By.id("tabletsImg"));
 
 		return element;
 	}
 
 	// para quando estiver logado
-	public static WebElement btnsignout(WebDriver driver) {
+	public static WebElement btnSignout(WebDriver driver) {
 		element = driver.findElement(By.className("option roboto-medium ng-scope"));
+		return element;
+	}
+
+	public static WebElement txtUser(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"menuUserLink\"]/span"));
+		return element;
+	}
+
+	public static WebElement produtoPesquisado(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"Description\"]/h1"));
+		return element;
+	}
+
+	public static WebElement produtoInexistente(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"searchPage\"]/div[3]/div/label/span"));
+		return element;
+	}
+
+	public static WebElement prodProcurado(WebDriver driver) {
+		element = driver.findElement(By.linkText("HP Pro Tablet 608 G1"));
+		return element;
+	}
+
+	public static WebElement prodDetails(WebDriver driver) {
+		element = driver.findElement(By.id("details_10"));
 		return element;
 	}
 

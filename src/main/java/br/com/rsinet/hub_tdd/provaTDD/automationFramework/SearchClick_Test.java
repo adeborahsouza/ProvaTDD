@@ -1,5 +1,6 @@
 package br.com.rsinet.hub_tdd.provaTDD.automationFramework;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.util.concurrent.TimeUnit;
@@ -14,56 +15,56 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import br.com.rsinet.hub_tdd.provaTDD.appModule.ClickSearch_Action;
+import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Home_Page;
 import br.com.rsinet.hub_tdd.provaTDD.util.Print_Func;
 
-public class SearchHome_Test {
+public class SearchClick_Test {
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	private static WebDriver driver;
 
 	@BeforeMethod
 	public static void openBrowser() {
 		DOMConfigurator.configure("log4j.xml");
-		Log.info("Iniciando o ChromeDriver.");
 		driver = new ChromeDriver();
 		System.setProperty("webdriver.chrome.drive", "C:\\Users\\deborah.souza\\Downloads\\chromedriver_win32");
+		Log.info("Iniciando o ChromeDriver.");
 
-		Log.info("Maximizando a tela.");
 		driver.manage().window().maximize();
+		Log.info("Maximizando a tela.");
 
-		Log.info("Adicionando uma espera implicita.");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Log.info("Adicionando uma espera implicita.");
 
-		Log.info("Acessando o site através da url.");
 		driver.get("http://advantageonlineshopping.com");
+		Log.info("Acessando o site através da url.");
 	}
 
-	@Test
+	@Test(priority = 0)
 	public void searchHomePositivo() {
 		Reporter.log("ChromeDriver inicializado com sucesso.");
-		Log.info("Inicializando o método de pesquisa pela página inicial.");
 		ClickSearch_Action.pesquisarinicio(driver);
+		Log.info("Inicializando o método de pesquisa pela página inicial.");
 
-//	 valor esperado / valor comparando
-//		assertTrue(true);(true, Home_Page.btnsignout(driver).isEnabled());
+		assertEquals(Home_Page.prodProcurado(driver).getText().toUpperCase()
+				.contains(Home_Page.produtoPesquisado(driver).getText()), true);
 
 		Reporter.log("Pesquisa realizada com sucesso.");
 		Print_Func.captureScreenShot(driver);
 	}
 
-//	
-//	@Test
-//	public void searchHomeNegativo() {
-//		// chama os metodos criados nas paginas de ação
-//		ClickSearch_Action.pesquisarinicio(driver);
-////	 valor esperado / valor comparando
-////		Assert.assertEquals(false, Home_Page.btnsignout(driver).isEnabled());
-//	}
-//	
+	@Test(priority = 1)
+	public void searchHomeNegativo() {
+		// chama os metodos criados nas paginas de ação
+		ClickSearch_Action.pesquisarinicioInvalido(driver);
+		assertEquals(Home_Page.prodDetails(driver).getText().contains("Folio"), false);
+		Log.info("Verifica se o produto contem Folio.");
+		Print_Func.captureScreenShot(driver);
+	}
 
 	@AfterMethod
 	public static void encerra() {
+//		driver.quit();
 		Log.info("Encerrando o driver.");
-		driver.quit();
 	}
 
 }

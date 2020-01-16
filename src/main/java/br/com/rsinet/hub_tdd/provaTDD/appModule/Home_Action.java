@@ -12,17 +12,17 @@ public class Home_Action {
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 
 	public static void logout(WebDriver driver) {
-		Log.info("Adicionando uma espera implicita.");
 		WebDriverWait wait = new WebDriverWait(driver, 30);
+		Log.info("Adicionando uma espera implicita.");
 
-		Log.info("Espera a url desejada.");
 		wait.until(ExpectedConditions.urlToBe("http://advantageonlineshopping.com/#/"));
+		Log.info("Espera a url desejada.");
 
-		Log.info("Clicando no elemento.");
 		Home_Page.btnUser(driver).click();
-
 		Log.info("Clicando no elemento.");
-		Home_Page.btnsignout(driver).click();
+
+		Home_Page.btnSignout(driver).click();
+		Log.info("Clicando no elemento.");
 
 	}
 }

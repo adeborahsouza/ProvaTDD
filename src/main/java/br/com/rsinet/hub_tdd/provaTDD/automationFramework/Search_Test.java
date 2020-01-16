@@ -1,5 +1,7 @@
 package br.com.rsinet.hub_tdd.provaTDD.automationFramework;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -12,6 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import br.com.rsinet.hub_tdd.provaTDD.appModule.Search_Action;
+import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Home_Page;
 import br.com.rsinet.hub_tdd.provaTDD.util.Constant;
 import br.com.rsinet.hub_tdd.provaTDD.util.ExcelUtils;
 import br.com.rsinet.hub_tdd.provaTDD.util.Print_Func;
@@ -23,12 +26,12 @@ public class Search_Test {
 	@BeforeMethod
 	public static void openBrowser() throws Exception {
 		DOMConfigurator.configure("log4j.xml");
-		Log.info("Iniciando o ChromeDriver.");
 		driver = new ChromeDriver();
 		System.setProperty("webdriver.chrome.drive", "C:\\Users\\deborah.souza\\Downloads\\chromedriver_win32");
+		Log.info("Iniciando o ChromeDriver.");
 
-		Log.info("Maximizando a tela.");
 		driver.manage().window().maximize();
+		Log.info("Maximizando a tela.");
 
 		Log.info("Adicionando uma espera implicita.");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -40,15 +43,24 @@ public class Search_Test {
 
 	}
 
-	@Test
+	@Test(priority = 0)
 	public void searchPositivo() throws Exception {
 		Reporter.log("ChromeDriver inicializado com sucesso.");
 		Log.info("Inicializando o método de pesquisa.");
 		Search_Action.pesquisar(driver);
 		Reporter.log("Pesquisa realizada com sucesso.");
-		
+		assertEquals(Home_Page.produtoPesquisado(driver).getText().contains(ExcelUtils.getCellData(1, 0).toUpperCase()), true);
 		Print_Func.captureScreenShot(driver);
+	}
 
+	@Test(priority = 1)
+	public void searchNegativo() throws Exception {
+		Reporter.log("ChromeDriver inicializado com sucesso.");
+		Log.info("Inicializando o método de pesquisa.");
+		Search_Action.pesquisarInvalido(driver);
+		Reporter.log("Pesquisa realizada com sucesso.");
+		assertEquals(Home_Page.produtoInexistente(driver).getText().contains("No results for"), true);
+		Print_Func.captureScreenShot(driver);
 	}
 
 	@AfterMethod

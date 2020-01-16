@@ -19,7 +19,7 @@ public class Login_Page {
 		return element;
 	}
 	
-	public static WebElement btnlogin (WebDriver driver) {
+	public static WebElement btnLogin (WebDriver driver) {
 		driver.findElement(By.id("sign_in_btnundefined"));
 		return element;
 	}

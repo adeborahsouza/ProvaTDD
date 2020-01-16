@@ -25,7 +25,7 @@ public class Register_Page {
 		return element;
 	}
 
-	public static WebElement confpassword(WebDriver driver) {
+	public static WebElement confPassword(WebDriver driver) {
 		// confirmando senha
 		element = driver.findElement(By.name("confirm_passwordRegisterPage"));
 		return element;
@@ -37,7 +37,7 @@ public class Register_Page {
 		return element;
 	}
 
-	public static WebElement lastname(WebDriver driver) {
+	public static WebElement lastName(WebDriver driver) {
 		// escrevendo ultimo nome
 		element = driver.findElement(By.name("last_nameRegisterPage"));
 		return element;
@@ -74,7 +74,7 @@ public class Register_Page {
 		return element;
 	}
 
-	public static WebElement postalcode(WebDriver driver) {
+	public static WebElement postalCode(WebDriver driver) {
 		// escrevendo cep
 		element = driver.findElement(By.name("postal_codeRegisterPage"));
 		return element;

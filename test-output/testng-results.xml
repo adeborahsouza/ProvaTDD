@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
     <line>
       <![CDATA[ChromeDriver inicializado com sucesso.]]>
@@ -8,16 +8,16 @@
       <![CDATA[Pesquisa realizada com sucesso.]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15293" started-at="2020-01-15T13:54:26 BRT" finished-at="2020-01-15T13:54:42 BRT">
+  <suite name="Default suite" duration-ms="29649" started-at="2020-01-16T15:42:40 BRT" finished-at="2020-01-16T15:43:10 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15293" started-at="2020-01-15T13:54:26 BRT" finished-at="2020-01-15T13:54:42 BRT">
-      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test@2bbf4b8b]" name="openBrowser" is-config="true" duration-ms="10891" started-at="2020-01-15T13:54:26 BRT" finished-at="2020-01-15T13:54:37 BRT">
+    <test name="Default test" duration-ms="29649" started-at="2020-01-16T15:42:40 BRT" finished-at="2020-01-16T15:43:10 BRT">
+      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="openBrowser" is-config="true" duration-ms="10852" started-at="2020-01-16T15:42:40 BRT" finished-at="2020-01-16T15:42:51 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="searchHomePositivo()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test@2bbf4b8b]" name="searchHomePositivo" duration-ms="3767" started-at="2020-01-15T13:54:37 BRT" finished-at="2020-01-15T13:54:41 BRT">
+        <test-method status="PASS" signature="searchHomePositivo()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="searchHomePositivo" duration-ms="5084" started-at="2020-01-16T15:42:51 BRT" finished-at="2020-01-16T15:42:56 BRT">
           <reporter-output>
             <line>
               <![CDATA[ChromeDriver inicializado com sucesso.]]>
@@ -27,11 +27,23 @@
             </line>
           </reporter-output>
         </test-method> <!-- searchHomePositivo -->
-        <test-method status="PASS" signature="encerra()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test@2bbf4b8b]" name="encerra" is-config="true" duration-ms="608" started-at="2020-01-15T13:54:41 BRT" finished-at="2020-01-15T13:54:42 BRT">
+        <test-method status="PASS" signature="encerra()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="encerra" is-config="true" duration-ms="0" started-at="2020-01-16T15:42:56 BRT" finished-at="2020-01-16T15:42:56 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- encerra -->
-      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchHome_Test -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="openBrowser" is-config="true" duration-ms="10102" started-at="2020-01-16T15:42:56 BRT" finished-at="2020-01-16T15:43:06 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="searchHomeNegativo()[pri:1, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="searchHomeNegativo" duration-ms="3571" started-at="2020-01-16T15:43:06 BRT" finished-at="2020-01-16T15:43:10 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHomeNegativo -->
+        <test-method status="PASS" signature="encerra()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="encerra" is-config="true" duration-ms="0" started-at="2020-01-16T15:43:10 BRT" finished-at="2020-01-16T15:43:10 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encerra -->
+      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

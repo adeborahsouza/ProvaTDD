@@ -12,11 +12,11 @@ public class Login_Action {
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 
 	public static void logar(WebDriver driver) {
-		Log.info("Adicionando uma espera implicita.");
 		WebDriverWait wait = new WebDriverWait(driver, 20);
+		Log.info("Adicionando uma espera implicita.");
 
-		Log.info("Clicando no elemento.");
 		Home_Page.btnUser(driver).click();
+		Log.info("Clicando no elemento.");
 
 	}
 
