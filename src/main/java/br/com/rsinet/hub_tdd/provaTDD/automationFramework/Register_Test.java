@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import br.com.rsinet.hub_tdd.provaTDD.appModule.Register_Action;
+import br.com.rsinet.hub_tdd.provaTDD.driverFactory.DriverManager;
 import br.com.rsinet.hub_tdd.provaTDD.util.Print_Func;
 
 public class Register_Test {
@@ -22,23 +23,14 @@ public class Register_Test {
 
 	@BeforeMethod
 	public static void openBrowser() {
-		DOMConfigurator.configure("log4j.xml");
-		driver = new ChromeDriver();
-		System.setProperty("webdriver.chrome.drive", "C:\\Users\\deborah.souza\\Downloads\\chromedriver_win32");
+		driver = DriverManager.startChrome();
 		Log.info("Iniciando o ChromeDriver.");
 
-		driver.manage().window().maximize();
-		Log.info("Maximizando a tela.");
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Log.info("Adicionando uma espera implicita.");
-
-		driver.get("http://advantageonlineshopping.com");
-		Log.info("Acessando o site através da url.");
 	}
 
 	@Test(priority = 0)
 	public void registerPositivo() {
+		DriverManager.openWebSite(driver);
 		Reporter.log("ChromeDriver inicializado com sucesso.");
 
 		Register_Action.registrar(driver);
@@ -47,20 +39,24 @@ public class Register_Test {
 		Reporter.log("Pesquisa realizada com sucesso.");
 		assertEquals("http://advantageonlineshopping.com/#/", driver.getCurrentUrl());
 		Print_Func.captureScreenShot(driver);
+		Log.info("Print da tela.");
 
 	}
 
 	@Test(priority = 1)
 	public void registerNegativo() {
+		DriverManager.openWebSite(driver);
+		Reporter.log("ChromeDriver inicializado com sucesso.");
 		Register_Action.registrarNegativo(driver);
 		assertEquals("http://advantageonlineshopping.com/#/register", driver.getCurrentUrl());
 		Print_Func.captureScreenShot(driver);
-		
+		Log.info("Print da tela.");
+
 	}
 
 	@AfterMethod
 	public static void encerra() {
-		driver.quit();
+		DriverManager.closeChrome(driver);
 		Log.info("Encerrando o navegador.");
 	}
 

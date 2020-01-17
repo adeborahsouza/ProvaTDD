@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import br.com.rsinet.hub_tdd.provaTDD.appModule.ClickSearch_Action;
+import br.com.rsinet.hub_tdd.provaTDD.driverFactory.DriverManager;
 import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Home_Page;
 import br.com.rsinet.hub_tdd.provaTDD.util.Print_Func;
 
@@ -24,23 +25,14 @@ public class SearchClick_Test {
 
 	@BeforeMethod
 	public static void openBrowser() {
-		DOMConfigurator.configure("log4j.xml");
-		driver = new ChromeDriver();
-		System.setProperty("webdriver.chrome.drive", "C:\\Users\\deborah.souza\\Downloads\\chromedriver_win32");
+		driver = DriverManager.startChrome();
 		Log.info("Iniciando o ChromeDriver.");
-
-		driver.manage().window().maximize();
-		Log.info("Maximizando a tela.");
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Log.info("Adicionando uma espera implicita.");
-
-		driver.get("http://advantageonlineshopping.com");
-		Log.info("Acessando o site através da url.");
 	}
 
 	@Test(priority = 0)
 	public void searchHomePositivo() {
+		DriverManager.openWebSite(driver);
+
 		Reporter.log("ChromeDriver inicializado com sucesso.");
 		ClickSearch_Action.pesquisarinicio(driver);
 		Log.info("Inicializando o método de pesquisa pela página inicial.");
@@ -50,20 +42,25 @@ public class SearchClick_Test {
 
 		Reporter.log("Pesquisa realizada com sucesso.");
 		Print_Func.captureScreenShot(driver);
+		Log.info("Print da tela.");
 	}
 
 	@Test(priority = 1)
 	public void searchHomeNegativo() {
+		DriverManager.openWebSite(driver);
+
+		Reporter.log("ChromeDriver inicializado com sucesso.");
 		// chama os metodos criados nas paginas de ação
 		ClickSearch_Action.pesquisarinicioInvalido(driver);
 		assertEquals(Home_Page.prodDetails(driver).getText().contains("Folio"), false);
 		Log.info("Verifica se o produto contem Folio.");
 		Print_Func.captureScreenShot(driver);
+		Log.info("Print da tela.");
 	}
 
 	@AfterMethod
 	public static void encerra() {
-//		driver.quit();
+		DriverManager.closeChrome(driver);
 		Log.info("Encerrando o driver.");
 	}
 
