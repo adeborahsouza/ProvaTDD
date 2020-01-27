@@ -1,49 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
     <line>
       <![CDATA[ChromeDriver inicializado com sucesso.]]>
     </line>
     <line>
-      <![CDATA[Pesquisa realizada com sucesso.]]>
+      <![CDATA[ChromeDriver inicializado com sucesso.]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29649" started-at="2020-01-16T15:42:40 BRT" finished-at="2020-01-16T15:43:10 BRT">
+  <suite name="Default suite" duration-ms="64044" started-at="2020-01-27T10:29:21 BRT" finished-at="2020-01-27T10:30:25 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29649" started-at="2020-01-16T15:42:40 BRT" finished-at="2020-01-16T15:43:10 BRT">
-      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="openBrowser" is-config="true" duration-ms="10852" started-at="2020-01-16T15:42:40 BRT" finished-at="2020-01-16T15:42:51 BRT">
+    <test name="Default test" duration-ms="64044" started-at="2020-01-27T10:29:21 BRT" finished-at="2020-01-27T10:30:25 BRT">
+      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.Register_Test">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Register_Test@34cd072c]" name="openBrowser" is-config="true" duration-ms="9955" started-at="2020-01-27T10:29:21 BRT" finished-at="2020-01-27T10:29:31 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="searchHomePositivo()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="searchHomePositivo" duration-ms="5084" started-at="2020-01-16T15:42:51 BRT" finished-at="2020-01-16T15:42:56 BRT">
+        <test-method status="FAIL" signature="registerPositivo()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Register_Test@34cd072c]" name="registerPositivo" duration-ms="36967" started-at="2020-01-27T10:29:31 BRT" finished-at="2020-01-27T10:30:08 BRT">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for text ('deborahhhh') to be present in element [[ChromeDriver: chrome on XP (af412eef9addfaa2d613b1a51c91c97e)] -> xpath: //*[@id="menuUserLink"]/span] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RSI1583', ip: '10.1.0.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\DEBORA~1.SOU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: af412eef9addfaa2d613b1a51c91c97e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('deborahhhh') to be present in element [[ChromeDriver: chrome on XP (af412eef9addfaa2d613b1a51c91c97e)] -> xpath: //*[@id="menuUserLink"]/span] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RSI1583', ip: '10.1.0.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\DEBORA~1.SOU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: af412eef9addfaa2d613b1a51c91c97e
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at br.com.rsinet.hub_tdd.provaTDD.appModule.Register_Action.registrar(Register_Action.java:76)
+at br.com.rsinet.hub_tdd.provaTDD.automationFramework.Register_Test.registerPositivo(Register_Test.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
             <line>
               <![CDATA[ChromeDriver inicializado com sucesso.]]>
             </line>
-            <line>
-              <![CDATA[Pesquisa realizada com sucesso.]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- searchHomePositivo -->
-        <test-method status="PASS" signature="encerra()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="encerra" is-config="true" duration-ms="0" started-at="2020-01-16T15:42:56 BRT" finished-at="2020-01-16T15:42:56 BRT">
+        </test-method> <!-- registerPositivo -->
+        <test-method status="PASS" signature="encerra()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Register_Test@34cd072c]" name="encerra" is-config="true" duration-ms="591" started-at="2020-01-27T10:30:08 BRT" finished-at="2020-01-27T10:30:08 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- encerra -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="openBrowser" is-config="true" duration-ms="10102" started-at="2020-01-16T15:42:56 BRT" finished-at="2020-01-16T15:43:06 BRT">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Register_Test@34cd072c]" name="openBrowser" is-config="true" duration-ms="9179" started-at="2020-01-27T10:30:08 BRT" finished-at="2020-01-27T10:30:18 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="searchHomeNegativo()[pri:1, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="searchHomeNegativo" duration-ms="3571" started-at="2020-01-16T15:43:06 BRT" finished-at="2020-01-16T15:43:10 BRT">
+        <test-method status="PASS" signature="registerNegativo()[pri:1, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Register_Test@34cd072c]" name="registerNegativo" duration-ms="6704" started-at="2020-01-27T10:30:18 BRT" finished-at="2020-01-27T10:30:24 BRT">
           <reporter-output>
+            <line>
+              <![CDATA[ChromeDriver inicializado com sucesso.]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- searchHomeNegativo -->
-        <test-method status="PASS" signature="encerra()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test@2bbf4b8b]" name="encerra" is-config="true" duration-ms="0" started-at="2020-01-16T15:43:10 BRT" finished-at="2020-01-16T15:43:10 BRT">
+        </test-method> <!-- registerNegativo -->
+        <test-method status="PASS" signature="encerra()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Register_Test@34cd072c]" name="encerra" is-config="true" duration-ms="618" started-at="2020-01-27T10:30:24 BRT" finished-at="2020-01-27T10:30:25 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- encerra -->
-      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test -->
+      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.Register_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

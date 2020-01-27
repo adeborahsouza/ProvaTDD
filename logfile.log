@@ -1018,3 +1018,177 @@
 2020-01-17 12:25:09,837 INFO  [Classe de pesquisa] Espera até que na url contenha a palavra search. 
 2020-01-17 12:25:10,199 INFO  [Teste de pesquisa] Print da tela. 
 2020-01-17 12:25:10,840 INFO  [Teste de pesquisa] Encerrando o driver. 
+2020-01-27 10:15:00,671 INFO  [Logger] Iniciando o ChromeDriver. 
+2020-01-27 10:15:01,607 INFO  [Logger] Adicionando uma espera implicita. 
+2020-01-27 10:15:02,514 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:15:02,618 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:15:03,186 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:15:03,211 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:15:03,568 INFO  [Logger] Preenchendo o campo username. 
+2020-01-27 10:15:03,769 INFO  [Logger] Preenchendo o campo email. 
+2020-01-27 10:15:03,904 INFO  [Logger] Preenchendo o campo senha. 
+2020-01-27 10:15:04,045 INFO  [Logger] Preenchendo o campo de confirmação de senha. 
+2020-01-27 10:15:04,160 INFO  [Logger] Preenchendo o campo com o primeiro nome. 
+2020-01-27 10:15:04,259 INFO  [Logger] Preenchendo o campo com o último nome. 
+2020-01-27 10:15:04,399 INFO  [Logger] Preenchendo o campo telefone. 
+2020-01-27 10:15:06,560 INFO  [Logger] Preenchendo o campo País. 
+2020-01-27 10:15:06,656 INFO  [Logger] Preenchendo o campo cidade. 
+2020-01-27 10:15:06,866 INFO  [Logger] Preenchendo o campo endereço. 
+2020-01-27 10:15:06,983 INFO  [Logger] Preenchendo o campo estado. 
+2020-01-27 10:15:07,106 INFO  [Logger] Preenchendo o campo cep. 
+2020-01-27 10:15:07,182 INFO  [Logger] Concordando com termos. 
+2020-01-27 10:15:07,257 INFO  [Logger] Clicando no botão para confirmar registro. 
+2020-01-27 10:15:38,124 INFO  [Logger] Encerrando o navegador. 
+2020-01-27 10:15:47,319 INFO  [Logger] Iniciando o ChromeDriver. 
+2020-01-27 10:15:48,092 INFO  [Logger] Adicionando uma espera implicita. 
+2020-01-27 10:15:49,081 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:15:49,169 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:15:49,740 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:15:49,765 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:15:50,117 INFO  [Logger] Preenchendo o campo username. 
+2020-01-27 10:15:50,326 INFO  [Logger] Preenchendo o campo email. 
+2020-01-27 10:15:50,470 INFO  [Logger] Preenchendo o campo senha. 
+2020-01-27 10:15:50,615 INFO  [Logger] Preenchendo o campo de confirmação de senha. 
+2020-01-27 10:15:50,736 INFO  [Logger] Preenchendo o campo com o primeiro nome. 
+2020-01-27 10:15:50,839 INFO  [Logger] Preenchendo o campo com o último nome. 
+2020-01-27 10:15:50,969 INFO  [Logger] Preenchendo o campo telefone. 
+2020-01-27 10:15:52,996 INFO  [Logger] Preenchendo o campo País. 
+2020-01-27 10:15:53,108 INFO  [Logger] Preenchendo o campo cidade. 
+2020-01-27 10:15:53,324 INFO  [Logger] Preenchendo o campo endereço. 
+2020-01-27 10:15:53,442 INFO  [Logger] Preenchendo o campo estado. 
+2020-01-27 10:15:53,557 INFO  [Logger] Preenchendo o campo cep. 
+2020-01-27 10:15:53,636 INFO  [Logger] Concordando com termos. 
+2020-01-27 10:15:53,712 INFO  [Logger] Clicando no botão para confirmar registro. 
+2020-01-27 10:15:54,024 INFO  [Logger] Print da tela. 
+2020-01-27 10:15:54,629 INFO  [Logger] Encerrando o navegador. 
+2020-01-27 10:22:26,884 INFO  [Logger] Iniciando o ChromeDriver. 
+2020-01-27 10:22:27,646 INFO  [Logger] Adicionando uma espera implicita. 
+2020-01-27 10:22:28,565 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:22:28,637 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:22:29,223 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:22:29,246 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:22:29,608 INFO  [Logger] Preenchendo o campo username. 
+2020-01-27 10:22:29,811 INFO  [Logger] Preenchendo o campo email. 
+2020-01-27 10:22:29,967 INFO  [Logger] Preenchendo o campo senha. 
+2020-01-27 10:22:30,097 INFO  [Logger] Preenchendo o campo de confirmação de senha. 
+2020-01-27 10:22:30,224 INFO  [Logger] Preenchendo o campo com o primeiro nome. 
+2020-01-27 10:22:30,335 INFO  [Logger] Preenchendo o campo com o último nome. 
+2020-01-27 10:22:30,461 INFO  [Logger] Preenchendo o campo telefone. 
+2020-01-27 10:22:32,427 INFO  [Logger] Preenchendo o campo País. 
+2020-01-27 10:22:32,531 INFO  [Logger] Preenchendo o campo cidade. 
+2020-01-27 10:22:32,858 INFO  [Logger] Preenchendo o campo endereço. 
+2020-01-27 10:22:32,973 INFO  [Logger] Preenchendo o campo estado. 
+2020-01-27 10:22:33,098 INFO  [Logger] Preenchendo o campo cep. 
+2020-01-27 10:22:33,191 INFO  [Logger] Concordando com termos. 
+2020-01-27 10:22:33,264 INFO  [Logger] Clicando no botão para confirmar registro. 
+2020-01-27 10:22:34,323 INFO  [Logger] Chamando o método de registro. 
+2020-01-27 10:22:34,989 INFO  [Logger] Print da tela. 
+2020-01-27 10:22:35,601 INFO  [Logger] Encerrando o navegador. 
+2020-01-27 10:22:44,795 INFO  [Logger] Iniciando o ChromeDriver. 
+2020-01-27 10:22:45,667 INFO  [Logger] Adicionando uma espera implicita. 
+2020-01-27 10:22:46,654 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:22:46,756 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:22:47,326 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:22:47,350 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:22:47,720 INFO  [Logger] Preenchendo o campo username. 
+2020-01-27 10:22:47,933 INFO  [Logger] Preenchendo o campo email. 
+2020-01-27 10:22:48,077 INFO  [Logger] Preenchendo o campo senha. 
+2020-01-27 10:22:48,219 INFO  [Logger] Preenchendo o campo de confirmação de senha. 
+2020-01-27 10:22:48,343 INFO  [Logger] Preenchendo o campo com o primeiro nome. 
+2020-01-27 10:22:48,459 INFO  [Logger] Preenchendo o campo com o último nome. 
+2020-01-27 10:22:48,590 INFO  [Logger] Preenchendo o campo telefone. 
+2020-01-27 10:22:50,629 INFO  [Logger] Preenchendo o campo País. 
+2020-01-27 10:22:50,734 INFO  [Logger] Preenchendo o campo cidade. 
+2020-01-27 10:22:51,062 INFO  [Logger] Preenchendo o campo endereço. 
+2020-01-27 10:22:51,181 INFO  [Logger] Preenchendo o campo estado. 
+2020-01-27 10:22:51,300 INFO  [Logger] Preenchendo o campo cep. 
+2020-01-27 10:22:51,380 INFO  [Logger] Concordando com termos. 
+2020-01-27 10:22:51,441 INFO  [Logger] Clicando no botão para confirmar registro. 
+2020-01-27 10:22:51,743 INFO  [Logger] Print da tela. 
+2020-01-27 10:22:52,356 INFO  [Logger] Encerrando o navegador. 
+2020-01-27 10:27:39,483 INFO  [Logger] Iniciando o ChromeDriver. 
+2020-01-27 10:27:40,283 INFO  [Logger] Adicionando uma espera implicita. 
+2020-01-27 10:27:41,284 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:27:41,380 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:27:41,941 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:27:41,967 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:27:42,332 INFO  [Logger] Preenchendo o campo username. 
+2020-01-27 10:27:42,538 INFO  [Logger] Preenchendo o campo email. 
+2020-01-27 10:27:42,682 INFO  [Logger] Preenchendo o campo senha. 
+2020-01-27 10:27:42,831 INFO  [Logger] Preenchendo o campo de confirmação de senha. 
+2020-01-27 10:27:42,964 INFO  [Logger] Preenchendo o campo com o primeiro nome. 
+2020-01-27 10:27:43,067 INFO  [Logger] Preenchendo o campo com o último nome. 
+2020-01-27 10:27:43,199 INFO  [Logger] Preenchendo o campo telefone. 
+2020-01-27 10:27:45,083 INFO  [Logger] Preenchendo o campo País. 
+2020-01-27 10:27:45,191 INFO  [Logger] Preenchendo o campo cidade. 
+2020-01-27 10:27:45,526 INFO  [Logger] Preenchendo o campo endereço. 
+2020-01-27 10:27:45,645 INFO  [Logger] Preenchendo o campo estado. 
+2020-01-27 10:27:45,761 INFO  [Logger] Preenchendo o campo cep. 
+2020-01-27 10:27:45,851 INFO  [Logger] Concordando com termos. 
+2020-01-27 10:27:45,929 INFO  [Logger] Clicando no botão para confirmar registro. 
+2020-01-27 10:28:16,914 INFO  [Logger] Encerrando o navegador. 
+2020-01-27 10:28:26,085 INFO  [Logger] Iniciando o ChromeDriver. 
+2020-01-27 10:28:26,863 INFO  [Logger] Adicionando uma espera implicita. 
+2020-01-27 10:28:27,871 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:28:27,963 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:28:28,516 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:28:28,556 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:28:28,920 INFO  [Logger] Preenchendo o campo username. 
+2020-01-27 10:28:29,114 INFO  [Logger] Preenchendo o campo email. 
+2020-01-27 10:28:29,249 INFO  [Logger] Preenchendo o campo senha. 
+2020-01-27 10:28:29,399 INFO  [Logger] Preenchendo o campo de confirmação de senha. 
+2020-01-27 10:28:29,529 INFO  [Logger] Preenchendo o campo com o primeiro nome. 
+2020-01-27 10:28:29,633 INFO  [Logger] Preenchendo o campo com o último nome. 
+2020-01-27 10:28:29,761 INFO  [Logger] Preenchendo o campo telefone. 
+2020-01-27 10:28:31,637 INFO  [Logger] Preenchendo o campo País. 
+2020-01-27 10:28:31,741 INFO  [Logger] Preenchendo o campo cidade. 
+2020-01-27 10:28:32,082 INFO  [Logger] Preenchendo o campo endereço. 
+2020-01-27 10:28:32,198 INFO  [Logger] Preenchendo o campo estado. 
+2020-01-27 10:28:32,321 INFO  [Logger] Preenchendo o campo cep. 
+2020-01-27 10:28:32,397 INFO  [Logger] Concordando com termos. 
+2020-01-27 10:28:32,467 INFO  [Logger] Clicando no botão para confirmar registro. 
+2020-01-27 10:28:32,791 INFO  [Logger] Print da tela. 
+2020-01-27 10:28:33,405 INFO  [Logger] Encerrando o navegador. 
+2020-01-27 10:29:31,268 INFO  [Logger] Iniciando o ChromeDriver. 
+2020-01-27 10:29:32,085 INFO  [Logger] Adicionando uma espera implicita. 
+2020-01-27 10:29:33,095 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:29:33,187 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:29:33,763 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:29:33,784 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:29:34,145 INFO  [Logger] Preenchendo o campo username. 
+2020-01-27 10:29:34,346 INFO  [Logger] Preenchendo o campo email. 
+2020-01-27 10:29:34,484 INFO  [Logger] Preenchendo o campo senha. 
+2020-01-27 10:29:34,627 INFO  [Logger] Preenchendo o campo de confirmação de senha. 
+2020-01-27 10:29:34,755 INFO  [Logger] Preenchendo o campo com o primeiro nome. 
+2020-01-27 10:29:34,853 INFO  [Logger] Preenchendo o campo com o último nome. 
+2020-01-27 10:29:34,978 INFO  [Logger] Preenchendo o campo telefone. 
+2020-01-27 10:29:37,146 INFO  [Logger] Preenchendo o campo País. 
+2020-01-27 10:29:37,247 INFO  [Logger] Preenchendo o campo cidade. 
+2020-01-27 10:29:37,472 INFO  [Logger] Preenchendo o campo endereço. 
+2020-01-27 10:29:37,595 INFO  [Logger] Preenchendo o campo estado. 
+2020-01-27 10:29:37,715 INFO  [Logger] Preenchendo o campo cep. 
+2020-01-27 10:29:37,799 INFO  [Logger] Concordando com termos. 
+2020-01-27 10:29:37,866 INFO  [Logger] Clicando no botão para confirmar registro. 
+2020-01-27 10:30:08,831 INFO  [Logger] Encerrando o navegador. 
+2020-01-27 10:30:18,012 INFO  [Logger] Iniciando o ChromeDriver. 
+2020-01-27 10:30:18,771 INFO  [Logger] Adicionando uma espera implicita. 
+2020-01-27 10:30:19,677 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:30:19,755 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:30:20,336 INFO  [Logger] Espera o elemento ser clicavel. 
+2020-01-27 10:30:20,360 INFO  [Logger] Clica no elemento. 
+2020-01-27 10:30:20,734 INFO  [Logger] Preenchendo o campo username. 
+2020-01-27 10:30:20,938 INFO  [Logger] Preenchendo o campo email. 
+2020-01-27 10:30:21,077 INFO  [Logger] Preenchendo o campo senha. 
+2020-01-27 10:30:21,212 INFO  [Logger] Preenchendo o campo de confirmação de senha. 
+2020-01-27 10:30:21,328 INFO  [Logger] Preenchendo o campo com o primeiro nome. 
+2020-01-27 10:30:21,439 INFO  [Logger] Preenchendo o campo com o último nome. 
+2020-01-27 10:30:21,595 INFO  [Logger] Preenchendo o campo telefone. 
+2020-01-27 10:30:23,630 INFO  [Logger] Preenchendo o campo País. 
+2020-01-27 10:30:23,738 INFO  [Logger] Preenchendo o campo cidade. 
+2020-01-27 10:30:23,967 INFO  [Logger] Preenchendo o campo endereço. 
+2020-01-27 10:30:24,108 INFO  [Logger] Preenchendo o campo estado. 
+2020-01-27 10:30:24,242 INFO  [Logger] Preenchendo o campo cep. 
+2020-01-27 10:30:24,327 INFO  [Logger] Concordando com termos. 
+2020-01-27 10:30:24,401 INFO  [Logger] Clicando no botão para confirmar registro. 
+2020-01-27 10:30:24,716 INFO  [Logger] Print da tela. 
+2020-01-27 10:30:25,334 INFO  [Logger] Encerrando o navegador. 

@@ -72,10 +72,10 @@ public class Register_Action {
 
 		Register_Page.btnRegister(driver).click();
 		Log.info("Clicando no botão para confirmar registro.");
-		
+
 		wait.until(ExpectedConditions.textToBePresentInElement(Home_Page.txtUser(driver), Constant.user));
 	}
-	
+
 	public static void registrarNegativo(WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		Log.info("Adicionando uma espera implicita.");
@@ -134,5 +134,9 @@ public class Register_Action {
 
 		Register_Page.btnRegister(driver).click();
 		Log.info("Clicando no botão para confirmar registro.");
+
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("window.scrollBy(0,100)");
+
 	}
 }
