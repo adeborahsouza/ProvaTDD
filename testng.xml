@@ -1,0 +1,9 @@
+<suite name="ProvaTDD">
+<test name="ProjetoLoja">
+<classes>
+<class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.Register_Test" />
+<class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.Search_Test" />
+<class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.SearchClick_Test" />
+</classes>
+</test>
+</suite>
